@@ -442,6 +442,7 @@ GameObject:
   - component: {fileID: 1271961333}
   - component: {fileID: 1271961337}
   - component: {fileID: 1271961336}
+  - component: {fileID: 1271961338}
   m_Layer: 0
   m_Name: Birdtoro
   m_TagString: Untagged
@@ -517,7 +518,7 @@ SpriteRenderer:
   m_SortingLayerID: 1731532087
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1309770799, guid: 33bb2436391570d44aeffcb00fbe2ff6, type: 3}
+  m_Sprite: {fileID: -1315984747, guid: 33bb2436391570d44aeffcb00fbe2ff6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -616,6 +617,27 @@ PolygonCollider2D:
       - {x: 0.555, y: -0.105}
       - {x: 0.565, y: -0.044999998}
   m_UseDelaunayMesh: 0
+--- !u!95 &1271961338
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271961332}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 757d571da752ced4aa168ba5b9e128a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
