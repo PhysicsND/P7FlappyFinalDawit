@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;                 // <-- TextMeshPro namespace
+using UnityEngine.UI;        // <-- Only needed if you also use UI images/buttons/etc.
 
 public class GameControl : MonoBehaviour
 {
-
     public static GameControl instance;
+
     public GameObject gameOverText;
+    public TMP_Text scoreText;      // <-- TMP version
+
     public bool gameOver = false;
     public float scrollSSpeed = -1.5f;
 
-    // Use this for initialization
+    private int score = 0;
+
     void Awake()
     {
-
         if (instance == null)
         {
             instance = this;
@@ -25,21 +29,27 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-
-        if (gameOver == true && Input.GetMouseButtonDown(0))
+        if (gameOver && Input.GetMouseButtonDown(0))
         {
-
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
+    public void BirdScored()
+    {
+        if (gameOver)
+            return;
+
+        score++;
+        scoreText.text = "Score: " + score;
+    }
+
     public void BirdDied()
     {
-
-        gameOverText.SetActive(true);
         gameOver = true;
+        gameOverText.SetActive(true);
     }
 }
+
