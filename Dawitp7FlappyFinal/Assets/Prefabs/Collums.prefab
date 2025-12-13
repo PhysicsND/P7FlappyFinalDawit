@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 650363250803232623}
   - component: {fileID: 7882925262372500326}
   - component: {fileID: 828365053170590871}
+  - component: {fileID: 3447033357597522462}
   m_Layer: 0
   m_Name: Collums
   m_TagString: Untagged
@@ -69,7 +70,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3749774, y: 1.9786265}
+  m_Offset: {x: 1.3749774, y: 2.2544577}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -80,7 +81,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.380075, y: 2.006082}
+  m_Size: {x: 1.380075, y: 2.5577445}
   m_EdgeRadius: 0
 --- !u!50 &650363250803232623
 Rigidbody2D:
@@ -133,6 +134,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358d3aaa7dce07c4abc0e9b0326d1a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3447033357597522462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732753841880656041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4f110af7c4c3d419a8544525503424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnPoolSize: 5
+  columnPrefab: {fileID: 0}
+  spawnRate: 4
+  columnMin: -1
+  columnMax: 3.5
 --- !u!1 &3071464840510872038
 GameObject:
   m_ObjectHideFlags: 0
